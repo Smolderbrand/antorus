@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Holy paladin — a guide on Legion healing</title>
+<title>Holy paladin — a comprehensive guide on Legion healing</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -183,15 +183,17 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
 
+<li>Artifact challenge</li>
+
 <li>Comprehensive spell list</li>
+
+<li>Cooldown usage on raid encounters</li>
 
 <li>Gear guide</li>
 
 <li>Introduction to raid healing</li>
 
 <li>Practical matters</li>
-
-<li>Tips specific to raid encounters</li>
 
 </ul>
 </p>
@@ -9396,13 +9398,19 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20191128105500028" modified="20191128105500028" title="$:/DefaultTiddlers">
+<div created="20191128105500028" modified="20200107130546798" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
-<div status="complete" title="$:/Import">
-<pre>The following tiddlers were imported:
-
-# [[$:/plugins/tiddlywiki/katex]]</pre>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;title&quot;: &quot;Untitled&quot;,
+            &quot;text&quot;: &quot;[img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusaderstrike.jpg]][[Crusader strike|https://www.wow-freakz.com/spells.php?spell=35395&amp;name=crusader-strike]]&quot;,
+            &quot;type&quot;: &quot;text/plain&quot;
+        }
+    }
+}</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9525,10 +9533,10 @@ toolbar-done-button:
 untagged-background: #2d3038
 very-muted-foreground: #2d3038</pre>
 </div>
-<div created="20200106083823398" modified="20200106153903528" title="$:/SiteSubtitle">
-<pre>a guide on Legion healing</pre>
+<div created="20200106083823398" modified="20200107130535577" title="$:/SiteSubtitle">
+<pre>a comprehensive guide on Legion healing</pre>
 </div>
-<div created="20191128105453816" modified="20200106083851963" title="$:/SiteTitle">
+<div created="20191128105453816" modified="20200107130526220" title="$:/SiteTitle">
 <pre>Holy paladin</pre>
 </div>
 <div created="20200106085645250" modified="20200106085801697" title="$:/state/ShowPaletteEditor">
@@ -9537,16 +9545,16 @@ very-muted-foreground: #2d3038</pre>
 <div created="20191128105516098" modified="20200106085638298" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20191128105511826" modified="20200107090203652" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20191128105511826" modified="20200107130511559" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200106093043783" modified="20200106093106120" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20200106093032047" modified="20200106093129839" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200106093032047" modified="20200107131147542" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20200107090201982" list="[[Practical matters]] [[Gear guide]] [[Tips specific to raid encounters]] [[Introduction to raid healing]] [[Comprehensive spell list]]" modified="20200107090201982" title="$:/StoryList">
+<div created="20200107130509592" list="[[Practical matters]] [[Gear guide]] [[Artifact challenge]] [[Cooldown usage on raid encounters]] [[Introduction to raid healing]] [[Comprehensive spell list]]" modified="20200107154147730" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9728,6 +9736,113 @@ very-muted-foreground: #2d3038</pre>
 <div created="20191128105539567" modified="20191128105548449" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>986px</pre>
 </div>
+<div created="20200107132421620" modified="20200107154130707" tags="" title="Artifact challenge">
+<pre>For the mage tower challenge I recommend you to be at least around 925 ilvl with a few ranks of concordance in this patch (maybe more if they scale it in 7.3.5, dunno), with good stats and consumables prepared in advance. You may do it with much less if you are good, but there's no reason to hurry, since the healer/tank mage towers are both exceptionally difficult they will require a lot of willpower and a time investment if you want to be successful.
+
+&quot;&quot;&quot;
+Quest: [img width=16 [https://wow.zamimg.com/images/wow/icons/tiny/quest_start.gif]][[End of the Risen Threat|https://www.wow-freakz.com/quest_helper.php?quest=46035]]
+Map: [img width=16 [https://www.wow-freakz.com/img/tiny/dungeon.gif]][[Black Rook Hold|https://www.wow-freakz.com/zone.php?zone=8583&amp;name=black-rook-hold]]
+&quot;&quot;&quot;
+
+''Recommended talents'':
+
+&quot;&quot;&quot;
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_swiftretribution.jpg]][[Crusader's Might|https://www.wow-freakz.com/spells.php?spell=196926&amp;name=crusader-s-might]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_divinesteed.jpg]][[Cavalier|https://www.wow-freakz.com/spells.php?spell=230332&amp;name=cavalier]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofhealing.jpg]][[Repentance|https://www.wow-freakz.com/spells.php?spell=20066&amp;name=repentance]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_devotionaura.jpg]][[Devotion Aura|https://www.wow-freakz.com/spells.php?spell=183425&amp;name=devotion-aura]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_holyavenger.jpg]][[Holy avenger|https://www.wow-freakz.com/spells.php?spell=105809&amp;name=holy-avenger]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_sanctifiedwrath.jpg]][[Sanctified Wrath|https://www.wow-freakz.com/spells.php?spell=53376]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_beaconsoflight.jpg]][[Beacon of faith|https://www.wow-freakz.com/spells.php?spell=156910&amp;name=beacon-of-faith]]
+&quot;&quot;&quot;
+
+''Legendaries'':
+
+&quot;&quot;&quot;
+''Stages 1-4'':  [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_necklace15.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=132444&amp;name=prydaz-xavaric-s-magnum-opus&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#f67600&gt;Prydaz, Xavaric's magnum opus&lt;/font&gt;&lt;/a&gt; and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_jewelry_ring_149.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=132452&amp;name=sephuz-s-secret&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#f67600&gt;Sephuz's secret&lt;/font&gt;&lt;/a&gt;
+''Stages 5,6'': [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_belt_leather_firelandsdruid_d_01.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=137086&amp;name=chain-of-thrayn&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#f67600&gt;Chain of Thrayn&lt;/font&gt;&lt;/a&gt; + irrelevant, I used [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_boots_plate_raidpaladin_i_01.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=132443&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#f67600&gt;Aggramar's Stride&lt;/font&gt;&lt;/a&gt; for speed increase in last phase
+&quot;&quot;&quot;
+
+It's recommended to equip a version of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_starofelune_02.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=147004&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#a335dd&gt;Sea Star of the Depthmother&lt;/font&gt;&lt;/a&gt; since these smart heals actually work on your party members.
+
+''General tips'':
+
+The first part burns down to doing as much damage as you can to the dangerous [[Corrupted Risen Mage|https://www.wow-freakz.com/npc_finder.php?npc=118491&amp;name=corrupted-risen-mage]] add in each wave, while also doing proper crowd control. In general it won't matter if you are a full donor or no, since the tactics are much more important and if you are careless things will quickly spiral out of control. This is the reason why stat-wise your priority, besides crit (reliable crits are vital here), you want to have ''versatility'' instead of mastery since only this will contribute to [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg]][[Judgment|https://www.wow-freakz.com/spells.php?spell=231644&amp;name=judgment]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusaderstrike.jpg]][[Crusader strike|https://www.wow-freakz.com/spells.php?spell=35395&amp;name=crusader-strike]] damage.
+
+''Stage 1'':
+
+Use your consumables before teleporting, at start you want to place a beacon on Jarod Shadowsong (he will be your tank) and one on Callie Carrington (the rogue). You will face five waves of adds which you must defeat together with your party to continue. Since they don't have raid frames, you want to have your mouseover macros prepared in advance, which you can use on their plates in the right of your screen. It may be helpful to use the [[Move Anything|https://www.curseforge.com/wow/addons/move-anything]] addon to get those somewhere more useful (I think they are under boss frames), but if you are aware of everything on-screen (which you should) it's not needed to. The adds are:
+
+(a) [[Corrupted Risen Soldier|https://www.wow-freakz.com/npc_finder.php?npc=118489&amp;name=corrupted-risen-soldier]] - 18M HP
+
+&quot;&quot;&quot;
+Abilities:
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_fixated_state_red.jpg]][[Fixate|https://www.wow-freakz.com/spells.php?spell=210099]] - the add will melee you instead of the tank, reason why Prydaz is good; if two adds fixate on you, use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_divinesteed.jpg]][[Divine steed|https://www.wow-freakz.com/spells.php?spell=190784&amp;name=divine-steed]]
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_rogue_fanofknives.jpg]][[Knife Dance|https://www.wow-freakz.com/spells.php?spell=200291]] - throws a barrage of knives at the enemies, inflicting physical damage; as bad as the mythic+ spell if performed by two soldiers at the same time, you'll want to use cooldowns if this happens (see below)
+&quot;&quot;&quot;
+
+(b) [[Corrupted Risen Arbalest|https://www.wow-freakz.com/npc_finder.php?npc=118492&amp;name=corrupted-risen-arbalest]] - 16.4M HP
+
+&quot;&quot;&quot;
+Abilities:
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_weapon_bow_06.jpg]][[Deadeye Shot|https://www.wow-freakz.com/spells.php?spell=241066]] - spammed on your tank
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blink.jpg]][[Phase Shift|https://www.wow-freakz.com/spells.php?spell=236689]] - the add randomly teleports and aims a Mana Sting to the player:
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembersblue.jpg]][[Mana Sting|https://www.wow-freakz.com/spells.php?spell=235992]] - arcane damage, and it's supposed to drain mana (ignore this mechanic, it has no effect on freakz)
+&quot;&quot;&quot;
+
+(c) [[Corrupted Rise Mage|https://www.wow-freakz.com/npc_finder.php?npc=118491&amp;name=corrupted-risen-mage]] - 18.2M HP
+
+[img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blast.jpg]][[Arcane Blitz|https://www.wow-freakz.com/spells.php?spell=235833]] - &quot;Blast&quot; type mechanic - heavy arcane damage at a random enemy, increasing damage of further successful casts.
+
+You will face the following combinations, in &quot;waves&quot;. Add priority is : Mage &gt; Soldier &gt; Arbalest, damge and keep CC on the first one. Selecting one of your targets will prompt your tank (Jarod) to attack them.
+
+''Wave 1'': 1 Arbalest - this is here just to get you familiar with the idea, since [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembersblue.jpg]][[Mana Sting|https://www.wow-freakz.com/spells.php?spell=235992]] doesn't work it's not a concern. Of course only 1 enemy won't deal much damage so don't use any cooldown on this one.
+
+''Wave 2'': 1 Arbalest + 1 Mage - I already said the first one is not really dangerous, however the mage will just stay there and spam cast [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_blast.jpg]][[Arcane Blitz|https://www.wow-freakz.com/spells.php?spell=235833]] - this will hit a random member of party (including yourself), and you must heal it. Unlike the BRH dungeon add, this also increases the damage of the next cast, so if you let it ramp up it will one-shot either you or your party. That's why it's imperative to focus using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_righteousfury.jpg]][[Judgment|https://www.wow-freakz.com/spells.php?spell=231644&amp;name=judgment]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_crusaderstrike.jpg]][[Crusader strike|https://www.wow-freakz.com/spells.php?spell=35395&amp;name=crusader-strike]] and maybe [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_innerfire.jpg]][[Consecration|https://www.wow-freakz.com/spells.php?spell=26573&amp;name=consecration]] to bring him down as quick as you can. Use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofmight.jpg]][[Hammer of justice|https://www.wow-freakz.com/spells.php?spell=853&amp;name=hammer-of-justice]] when he got 3-4 stacks so that they fade off him or you can cast [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofhealing.jpg]][[Repentance|https://www.wow-freakz.com/spells.php?spell=20066&amp;name=repentance]] to do the same thing. This is the reason why you use Sephuz so that after first CC you bring him quickly - you shouldn't need to pop //two// CCs at this point.
+
+''Wave 3'': 1 Soldier + 1 Mage - this is your first challenge, it may sound easy but the combination of their abilities is dangerous. You should ''still'' be able to use the wave 2 tactic, spot-healing and saving your large cooldowns for the next two.
+
+''Wave 4'': 1 Mage + 2 Soldiers - this is probably the hardest. Use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] while DPSing the mage first, and pop CCs so that sephuz procs on [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_rogue_fanofknives.jpg]][[Knife Dance|https://www.wow-freakz.com/spells.php?spell=200291]] especially. A tactic I found useful is to bring down the mage quickly, and then stop DPSing at all - this way I can use wings again on the next wave, while kiting the soldiers all over the room and topping off everyone.
+
+''Wave 5'': 1 Mage + 1 Soldier + 1 Arbalest - this is still annoying, but if you reach it you should be able to finish. Use AV when it becomes available, and again CC to interrupt the mage and prevent the buff from stacking.
+
+Depending on your stats you may want to use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_holyavenger.jpg]][[Holy avenger|https://www.wow-freakz.com/spells.php?spell=105809&amp;name=holy-avenger]] on either the 4th or 5th wave, but if you struggle I recommend using it during ~AoE on the 4th, eventually stacking it with sephuz will bring you at haste cap and allow to DPS/heal quickly. Be careful afterwards (if you kill the mage, the remaining adds are still dangerous!), and you will find yourself together with your party at the end. Commander Jarod will lead you inside the hold, however I found that sometimes this bugs on freakz and he gets stuck in a wall or something. If this happens you must hearth back to Dalaran, don't be frustrated, since anyway you are not at all finished, but try to make sure that when you kill the last arbalest in the last wave, Jarod is in front of the stairs rather than in a corner. One more thing: towards the end you should find yourself with roughly 100-200K mana left, you shouldn't run oom otherwise try to do the trick indicated during wave 4.
+
+''Stage 2'':
+
+Going inside Black Rook Hold, your allies have been captured by the [[Dread Corruptor|https://www.wow-freakz.com/npc_finder.php?npc=118487&amp;name=dread-corruptor]] (an inquisitor basically). It was supposed that you have a 5 minute timer (which was lenient anyway) to finish the next part, but on freakz there's no timer, so proceed carefully. 
+
+''Stage 3'':
+
+You will find yourself in a room full of [[Flickering Eye|https://www.wow-freakz.com/npc_finder.php?npc=997842&amp;name=flickering-eye]]s (1.1M HP each). These don't do anything but [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_felarakkoa_feldetonation_green.jpg]][[Flicker|https://www.wow-freakz.com/spells.php?spell=237183]] small amounts of shadow damage at you. You should kill the two nearest adds to make room for yourself since you get hit by this only in range. After killing one, it will [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_felarakkoa_feldetonation_green.jpg]][[Detonate|https://www.wow-freakz.com/spells.php?spell=237401]] for a large amount of damage, keep yourself topped up while killing them one by one.
+
+After escaping, you will find yourself facing a [[Felguard|https://www.wow-freakz.com/npc_finder.php?npc=119472&amp;name=felspite-dominator]] (6.8M hp), some [[Bats|https://www.wow-freakz.com/npc_finder.php?npc=119469&amp;name=fel-bat-pup]] (roughly 1M hp) and the [[Unstable fel orbs|https://www.wow-freakz.com/npc_finder.php?npc=119473&amp;name=unstable-fel-orb]]. The first two don't seem to have an associated mechanic and don't hit much, dps them while keeping yourself at full health. The orbs didn't do anything to me, you can pop [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_innerfire.jpg]][[Consecration|https://www.wow-freakz.com/spells.php?spell=26573&amp;name=consecration]] to &quot;deactivate&quot; them, which will make them shimmer and reappear again, since they don't actually die - I recommend you to ignore them.
+
+After this there is a door grate, and you will see a feared night elf running down the stairs, click on the grate to unlock it and use your mouseover dispell macro on him before he runs into you. This is where you will be introduced to the &quot;clones&quot; mechanic, you will see a few green Night Elfs (&quot;damaged&quot; mage/soldier/archer), they are gradually losing HP and you must heal all of them to full health, each time you do this to one they will say something, do it as fast as you can using mouseover macros since they don't have any frames associated, otherwise if one falls to low it will transform in a Stage 1 add and slow you down. Afterwards you will face one [[Corupted Risen Arbalest|https://www.wow-freakz.com/npc_finder.php?npc=122397&amp;name=corrupted-risen-arbalest]] (8M), just dps him fast.
+
+Continuing upstairs you will see more of those orbs before, and finally another grate, unlock it and you will find yourself in a room with the [[Dread Corruptor|https://www.wow-freakz.com/npc_finder.php?npc=118487&amp;name=dread-corruptor]] and some more [[Flickering Eye|https://www.wow-freakz.com/npc_finder.php?npc=997842&amp;name=flickering-eye]]s. Deal with them the same way as before, eventually using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_prayerofhealing.jpg]][[Repentance|https://www.wow-freakz.com/spells.php?spell=20066&amp;name=repentance]] on the corruptor if you are unsure about his [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_priest_mindspike.jpg]][[Mind Spike|https://www.wow-freakz.com/spells.php?spell=235825]] (it doesn't hit hard).
+
+''Stage 4'':
+
+After clearing the previous room you will reunite with your party. Here you can sit while waiting for your cooldowns, refresh your buffs and (I recommend) switch your legendaries for the next two phases. As Prydaz is somewhat confusing to use because of the last phase mechanic, I used the waist + feet for speed increase. If you want you can try to use a tome to adjust talents (it didn't work for me).
+
+''Stage 5'':
+
+This is //the// most difficult part after the waves of soldiers. Re-apply the beacons on your party if you haven't done so. You won't confront the boss directly (not just now), however he will make your party fight each other while summoning a number of ghosts, each around 3.7M HP. Each time he will channel a beam to one of each type (a total of 3 ghosts), pulling them to him, and if one reaches the boss, it will become an add in the next stage, delaying the final confrontation. You must heal each of these while keeping your party topped up as well, I recommend using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_layonhands.jpg]][[Lay on hands|https://www.wow-freakz.com/spells.php?spell=633&amp;name=lay-on-hands]] on the first one, then one cooldown (wings/HA) for the first and then the second waves, [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_searinglight.jpg]][[Holy shock|https://www.wow-freakz.com/spells.php?spell=20473&amp;name=holy-shock]] and why not [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightofthemartyr.jpg]][[Light of the martyr|https://www.wow-freakz.com/spells.php?spell=183998&amp;name=light-of-the-martyr]] since no one attacks you if one is near the boss. These don't seem to be susceptible to smart heals, so your trinket won't proc on them, and sacrifice [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] is useless. You have to use mouseover macros and heal them manually. After getting eight to full health, it will deactivate the remaining beam(s). Positioning and attention is important here, and since the adds move this is much more annoying than the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_darkness.jpg]][[Hopelessness|https://www.wow-freakz.com/spells.php?spell=237725]] KJ mechanic.
+
+''Stage 6'':
+
+This stage varies depending on how many ghosts are left near the boss, which each will turn into a stage 1 add and you must deal with whatever combination spawns. One add is manageable, two dangerous adds is nasty since you already used your cooldowns you must remember the stage 1 tactics and adjust accordingly. Three or more is already too much, you will probably wipe quickly. After this...
+
+''Final stage'':
+
+Here you will confront [[Lord Erdris Thorn|https://www.wow-freakz.com/npc_finder.php?npc=118488&amp;name=lord-erdris-thorn]] (72M HP) himself, while already he has shown some pervert abilities in the previous stage, he will fight your tank and the main ability he uses on the player is [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowandflame.jpg]][[Ignite Soul|https://www.wow-freakz.com/spells.php?spell=237188]]. If you are familiar to the Nightbane encounter this should sound familiar, it places a 9-second debuff which will detonate, dealing damage to each of your party members equal to your remaining HP. He will also periodically jump on you and leave a fel puddle at your feet, which you are supposed to use to reduce your HP before the debuff expires. That's why I recommended the speed increase, since you want to be fast, go to the edge of the room and place these puddles on the edges. They won't despawn, but it will limit the space. Hit the boss ass much as you can to lower his HP, while keeping your party topped up - they should do the most of the work for you. Save [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]] for the really dangerous moments. At the end the ground will be covered in fel, don't despair if you bring him to 2-3% since your party should be able to finish him off even if you die. After he dies the Scenario is complete and the quest is awarded.
+
+Congratulations, go to Violet Citadel and pick up [img width=16 [https://wow.zamimg.com/images/wow/icons/tiny/quest_start.gif]][[Jarod's Gift|https://www.wow-freakz.com/quest_helper.php?quest=45906&amp;name=jarod-s-gift]]. Now all there is left is to unlock the other colors... :)
+
+ 
+</pre>
+</div>
 <div created="20200106083929785" modified="20200107095245808" tags="" title="Comprehensive spell list">
 <pre>Here is a list of all your spells and passives, each followed by a short commentary. Since, as you can see, there are a lot of them I divided them in several categories. Clicking on these and trying to //understand// them is the best way to learn your class thoroughly, also read  post for their usage. To avoid excesive clutter, I placed the artifact traits at the end - as a rule, these add another layer of spell modifiers to talents/set bonuses/legendaries' spells etc.
 
@@ -9900,7 +10015,208 @@ very-muted-foreground: #2d3038</pre>
 * [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_toweroflight.jpg]][[Secure in the light|https://www.wow-freakz.com/spells.php?spell=253070]] - +2 weapon ilvl
 </pre>
 </div>
-<div created="20200106151050374" modified="20200107111824863" tags="" title="Gear guide">
+<div created="20200106144709282" modified="20200107133632739" tags="" title="Cooldown usage on raid encounters">
+<pre>Here is a list of the things I found useful during the raids that are released, keep in mind while consulting the logs that certain things are different between freakz encounters and blizzard encounters. These reflect my personal take on the bosses: you may want to ignore some of them and use a good measure of spontaneity in pugs, just because human stupidity is so vast. Here they are:
+
+!! ''The Nighthold''
+
+''Skorpyron''
+
+* use your bursts during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_datacrystal05.jpg]][[Crystalline Fragments|https://www.wow-freakz.com/spells.php?spell=204292&amp;name=crystalline-fragments]] as this is when most ~AoE damage occurs;
+
+* this means that on normal/heroic you want to use a CD after each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_shield_24.jpg]][[Vulnerability|https://www.wow-freakz.com/spells.php?spell=204448&amp;name=chitinous-exoskeleton]], while also topping the tanks which will take heavy damage
+
+* on mythic this happens when the boss is blue, while the other shards are not especially dangerous
+
+* pop [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] during your bursts or to deal some damage to the adds.
+
+''Spellblade Aluriel''
+
+* if people pass the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_mage_frostbomb.jpg]][[Marks of Frost|https://www.wow-freakz.com/spells.php?spell=212587]] around successfully, towards the end of phase one there will be a lot of debuffs, so it's best to use wings before the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_frost_frozenorb.jpg]][[Pools of Frost|https://www.wow-freakz.com/spells.php?spell=212736]] start forming
+
+* in phase two, use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] during the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_burningspeed.jpg]][[Blazing Charge|https://www.wow-freakz.com/spells.php?spell=233098]]
+
+''Krosus''
+
+* use a strong cooldown on [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_fistofjustice.jpg]][[Slam|https://www.wow-freakz.com/spells.php?spell=205875]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamestrike.jpg]][[Orb of Destruction|https://www.wow-freakz.com/spells.php?spell=205348]] consecutive casts
+
+* [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] can be used in melee range before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_fistofjustice.jpg]][[Slam|https://www.wow-freakz.com/spells.php?spell=205875]] hits
+
+* since this boss is a bit underwhelming, I personally prefer to keep AM for the case when too many adds spawn (until they fix add scaling this is more dangerous on normal mode than heroic/mythic)
+
+''Tichondrius''
+
+* you should use a large cooldown if two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fel_elementaldevastation.jpg]][[Brand of Argus|https://www.wow-freakz.com/spells.php?spell=212795]] detonations occur at the same time or during the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidentropy.jpg]][[Echoes of the Void|https://www.wow-freakz.com/spells.php?spell=213531]] when many people already have the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_necroticplague.jpg]][[Carrion Plague|https://www.wow-freakz.com/spells.php?spell=206480]] debuff
+
+* since on Mythic the CP debuffs work differently, you should care more about the brand detonations which deal massive damage
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] macro before the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidentropy.jpg]][[Echoes of the Void|https://www.wow-freakz.com/spells.php?spell=213531]]
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_howlofterror.jpg]][[Illusionary Night|https://www.wow-freakz.com/spells.php?spell=206365]]
+
+''Elisande''
+
+* during phase one the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_starfire.jpg]][[Cascadent star|https://www.wow-freakz.com/spells.php?spell=229738]] hits the hardest, I prefer to use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] at the beginning
+
+* during phase two and three use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] if the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_invocation.jpg]][[Epocheric Orb Falloff|https://www.wow-freakz.com/spells.php?spell=210546]] ramps up
+
+* be sure everyone is topped up during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane03.jpg]][[Delphuric Beam|https://www.wow-freakz.com/spells.php?spell=214278]] casts
+
+''Gul'dan''
+
+This boss is bugged like hell at the moment so not much to care for.
+
+* use a strong cooldown on [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_trinket6oih_orb4.jpg]][[Empowered Eye of Gul'dan|https://www.wow-freakz.com/spells.php?spell=209489]] casts
+
+* (mythic only) make sure everyone is topped up before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_infernalstrike1.jpg]][[Flame Crash|https://www.wow-freakz.com/spells.php?spell=227096]]
+
+* (mythic only) use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_layonhands.jpg]][[Lay on hands|https://www.wow-freakz.com/spells.php?spell=633&amp;name=lay-on-hands]] to deplete the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_elemental_primal_shadow.jpg]][[Severed Soul|https://www.wow-freakz.com/spells.php?spell=206506]] shield
+
+!! ''Tomb of Sargeras''
+
+''Goroth''
+
+* use your burst macros after every [img width=16 [https://wow.zamimg.com/images/wow/icons/large/creatureportrait_infernal_ball_02.jpg]][[Shattering Nova|https://www.wow-freakz.com/spells.php?spell=233283&amp;name=shattering-nova]] and (mythic only) [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felimmolation.jpg]][[Infernal Burning|https://www.wow-freakz.com/spells.php?spell=233062&amp;name=infernal-burning]]
+
+* on mythic, people need to be topped up after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/creatureportrait_infernal_ball_02.jpg]][[Rain of Brimstone|https://www.wow-freakz.com/spells.php?spell=238588&amp;name=rain-of-brimstone]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembersgreen.jpg]][[Crashing Comet|https://www.wow-freakz.com/spells.php?spell=230345]]; getting hit by two spells will likely result in a death if all healers fail to bring everyone again to full HP because of the two mechanics above.
+
+''Demonic Inquisition''
+
+* this boss is not very spectacular, just use your bursts when other healers go to the cage to heal the aoe damage.
+
+''Harjatan''
+
+* the interval between two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phases is a bit longer than one minute, how long depends on the number of pools of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_elemental_mote_water01.jpg]][[Drenching waters|https://www.wow-freakz.com/spells.php?spell=231768]] on the ground
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] when a tank has too many stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_ghoulfrenzy.jpg]][[Jagged Abrasion|https://www.wow-freakz.com/spells.php?spell=231998]]
+
+* stack with other people and keep everyone topped up after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg]][[Unchecked Rage|https://www.wow-freakz.com/spells.php?spell=231854]]
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] on each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phase
+
+* on mythic, use your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] during the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phase and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] macros on third [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_icetouch.jpg]][[Frigid Blows|https://www.wow-freakz.com/spells.php?spell=233429]], when damage will ramp up since the boss has many stacks from the pools that have formed until now.
+
+''The Desolate Host''
+
+* at the beginning, use your beacons on tanks on both realms, or if using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_clarityofpurpose.jpg]][[Beacon of the lightbringer|https://www.wow-freakz.com/spells.php?spell=197446&amp;name=beacon-of-the-lightbringer]], place it in the opposite realm
+
+* spot-heal dps/tanks hit by the adds' abilities
+
+* if you are in Spirit Realm, you can pop all your CDs except [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] on each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg]][[Wailing Souls|https://www.wow-freakz.com/spells.php?spell=236075]] cast; since this takes 1 minute, it may be better not to use them all at once
+
+* if you are in Spirit Realm save [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] for an overlap between [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg]][[Wailing Souls|https://www.wow-freakz.com/spells.php?spell=236075]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_bossgorefiend_touchofdoom.jpg]][[Sundering Doom|https://www.wow-freakz.com/spells.php?spell=236542]]
+
+* if you are in Corporal Realm, solo-soak [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_spear_08.jpg]][[Spear of Anguish|https://www.wow-freakz.com/spells.php?spell=235933]] with [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]] so that you can immune the absorption shield and return to your place
+
+* keep everyone topped up before each of the Desolate Host's casts, especially if the boss has high stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_darkness.jpg]][[Torment|https://www.wow-freakz.com/spells.php?spell=236548]]
+
+''Mistress Sassz'ine''
+
+* ideally, you should rotate your small cooldowns for each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_ammo_arrow_03.jpg]][[Hydra Shot|https://www.wow-freakz.com/spells.php?spell=230139]]
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] on the burden-debuffed tank if they accidentally pick up adds
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofvalor.jpg]][[Blessing of freedom|https://www.wow-freakz.com/spells.php?spell=1044&amp;name=blessing-of-freedom]] to pick up the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_legion_goooil_pool.jpg]][[Befouling Ink|https://www.wow-freakz.com/spells.php?spell=232913]] patches on the ground and bring them to Sarukel
+
+* use larger cooldowns during phase 3 when damage ramps up
+
+* switch to [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessedlife.jpg]][[Aura of Mercy|https://www.wow-freakz.com/spells.php?spell=183415&amp;name=aura-of-mercy]] in pugs if people are likely to one-shot you during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/trade_archaeology_shark-jaws.jpg]][[Devouring Maw|https://www.wow-freakz.com/spells.php?spell=232746]]
+
+''Sisters of the Moon''
+
+* most of the damage during this fight is unavoidable, due to abilities like [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_upgrademoonglaive.jpg]][[Twilight Glaive|https://www.wow-freakz.com/spells.php?spell=236541]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/
+ability_socererking_arcanewrath.jpg]][[Lunar Strike|https://www.wow-freakz.com/spells.php?spell=237632]]
+
+* unfortunately [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] doesn't count absorbed healing during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], so you may want to pop this at half-moon, when either [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_mage_supernova_nightborne.jpg]][[Astral Purge|https://www.wow-freakz.com/spells.php?spell=234998]] (mythic only) or other unavoidable damage ramps up
+
+* make sure you can see the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_convulsiveshadows.jpg]][[Rapid Shot|https://www.wow-freakz.com/spells.php?spell=236603]] on your raid frames, and spot-heal them quickly
+
+* you should immune the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_herb_arrowbloom.jpg]][[Incorporeal Shot|https://www.wow-freakz.com/spells.php?spell=236305]] once if you are able to
+
+* especially on mythic, it's important to keep available [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] for use right before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], and then pop your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] macro with any other trinkets/spells you have on CD to deplete the shield.
+
+''Maiden of Vigilance''
+
+* since the interval between two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthepure.jpg]][[Blowback|https://www.wow-freakz.com/spells.php?spell=248812]]s is roughly 90 seconds and the encounter area is not really big, this boss is very paladin-friendly
+
+* after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthepure.jpg]][[Blowback|https://www.wow-freakz.com/spells.php?spell=248812]], soak a few orbs and move towards the Maiden, and pop one of your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] or [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] macros after using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_holyavenger.jpg]][[Holy avenger|https://www.wow-freakz.com/spells.php?spell=105809&amp;name=holy-avenger]]
+
+* you can immune the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fel_incinerate.jpg]][[Unstable Soul|https://www.wow-freakz.com/spells.php?spell=235117]] debuff once if it annoys you
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] on cooldown in melee range
+
+''Fallen Avatar''
+
+* in phase one, use a big cooldown during each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felhellfire.jpg]][[Rupture Realities|https://www.wow-freakz.com/spells.php?spell=235572]] cast
+
+* (heroic/mythic) you can use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] either in melee range or on one of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg]][[Touch of Sargeras|https://www.wow-freakz.com/spells.php?spell=239058]] zones
+
+* as I said elsewhere, it's not your job to spam [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_flashheal.jpg]][[Flash of Light|https://www.wow-freakz.com/spells.php?spell=19750&amp;name=flash-of-light]] on tanks, but rather to stay in range and heal everyone
+
+* you can use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] to remove [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldbreak.jpg]][[Desolate|https://www.wow-freakz.com/spells.php?spell=236494]] stacks, keep in mind that this might make the tank lose aggro so be prepared to spot-heal rogues/dh
+
+* you can solo-soak [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg]][[Touch of Sargeras|https://www.wow-freakz.com/spells.php?spell=239058]], but use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineprotection.jpg]][[Divine protection|https://www.wow-freakz.com/spells.php?spell=498&amp;name=divine-protection]] since the damage at the moment is like 6M (instead of 4.5M) on retail, while on mythic you should use immunity to solo-soak
+
+* in phase two, use larger cooldowns during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felhellfire.jpg]][[Rupture Realities|https://www.wow-freakz.com/spells.php?spell=235572]] especially if the boss has high [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felcano.jpg]][[Fel Infusion|https://www.wow-freakz.com/spells.php?spell=236684]] stacks
+
+* you can solo soak [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_surgeofdarkness.jpg]][[Dark Mark|https://www.wow-freakz.com/spells.php?spell=239739]] with [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]], keep in mind that this does not immune the vertical knockback, at least until they fix the spell (there is a hotfix which says it shouldn't target healers)
+
+''Kil'jaeden''
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]] to soak two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_mage_meteor.jpg]][[Armaggedon Hail|https://www.wow-freakz.com/spells.php?spell=240911]] meteors
+
+* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] if available on each of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/sha_spell_warlock_demonsoul_nightmare.jpg]][[Shadow Reflection: Erupting|https://www.wow-freakz.com/spells.php?spell=236710]] or at the beginning of phase two
+
+* use your large cooldowns towards the end of the first intermission, when the raid is coated in [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felpyroblast.jpg]][[Armageddon Rain|https://www.wow-freakz.com/spells.php?spell=234310]] debuffs and if it's likely that [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_inferno.jpg]][[Bursting Dreadflame|https://www.wow-freakz.com/spells.php?spell=238429]] will one-shot someone
+
+* use artifact ability + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] right after you reach Illidan in the second intermission to counter the ~DoT, or if it's not necessary after the first [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_blackplague.jpg]][[Darkness of a Thousand Souls|https://www.wow-freakz.com/spells.php?spell=239216]] cast
+
+* (heroic/mythic) make sure that everyone is topped right before the first [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_blackplague.jpg]][[Darkness of a Thousand Souls|https://www.wow-freakz.com/spells.php?spell=239216]], as otherwise this might one-shot on these modes
+
+* (mythic only) you want to keep [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] for each of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/sha_spell_warlock_demonsoul_nightborne.jpg]][[Shadow Reflection: Hopeless|https://www.wow-freakz.com/spells.php?spell=237590]] casts, and since paladin is so good at healing these clones, you may want to write a burst macro with all your cooldowns to pop on each of these; keep in mind that the clones themselves don't have any associated frames (similarly to mage tower ghosts), so you want to have your mouseover macros on your keybinds if you don't want to target them individually
+
+''Dirty stuff'' - keep in mind that most bosses are easier than you think, so you may not need to resort to any subterfuge after all.
+
+''Mistress Sassz'ine''
+
+You can immune the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_frost_stun.jpg]][[Hydra Acid|https://www.wow-freakz.com/spells.php?spell=234332]] stun on freakz, even if you are not supposed to; since there are only three beams, having the three players that are targeted go near each other and allow someone with immunity and a dk soak all three beams with combinations of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_charm.jpg]][[Every Man of Himself|https://www.wow-freakz.com/spells.php?spell=59752]] or [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_iceboundfortitude.jpg]][[Icebound Fortitude|https://www.wow-freakz.com/spells.php?spell=48792]] is a good way to cheese a few of these on mythic; this is not as important as it was a lot of time ago, and the boss is bound to become easier as more gear becomes available.
+
+''Sisters of the Moon''
+
+Here's how to dodge [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_upgrademoonglaive.jpg]][[Glaive Storm|https://www.wow-freakz.com/spells.php?spell=236480]] reliably. You should look at the Huntress' incorporeal form and be at her side when she throws the big glaive. The way this works, it will shatter into three smaller glaives you can easily dodge, however when these shatter again into nine glaives and you have high stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_socererking_arcanefortification.jpg]][[Lunar Suffusion|https://www.wow-freakz.com/spells.php?spell=234995]] it's easy to get one-shot.
+
+What happens though, if you look at the boss room, it's not exactly circular, but instead a polygon with 24 sides (&quot;walls&quot;). The small glaives will always fixate on one of the [[glaive targets|https://www.wow-freakz.com/npc_finder.php?npc=119054&amp;name=glaive-target]] which, as it happens, (almost) coincide with the corners of the room. Thus a typical cast will look like this (I took this screenshot from a sandbox so that you can see the whole room clearly; during the fight it's almost impossible to view all corners without a first-person view which is really annoying, but get used to it):
+
+[img width=860 [https://raw.githubusercontent.com/Smolderbrand/antorus/master/images/glaivestorm.png]]
+
+From here it's easy to deduce what to do: dodge the big glaive and move to the middle of one of those 24 small &quot;walls&quot;, while healing/dpsing normally. On mythic you don't want to trigger a detonation, so keep yourself to the left half of the room. If you are not a tauren, your hit box is much smaller than you think, and even if two glaives come at your sides, nothing will happen. (It requires faith, I know.)
+
+You //can// use sacrifice [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] once to deplete a large part of the shield during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], but you should be a bit crazy to try this on mythic, better warn your raid leader about it before trying. Here's how: keep yourself at relatively low health before the cast (maybe using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightofthemartyr.jpg]][[Light of the martyr|https://www.wow-freakz.com/spells.php?spell=183998&amp;name=light-of-the-martyr]] if other healers are overzealous), prepare yourself as you would usually do and when all shields are up use the following macro:
+
+```
+/use Rule of Law
+/use Holy Avenger
+/use Avenging Wrath
+/use Aura Mastery
+/use Divine Shield - this will immune your absorb shield
+/use [target=self] Holy Shock
+```
+
+and then heal normally.
+
+Also, if you want to use Grid2 to be warned about the relative size of healing absorbs, you probably noticed that the shields are bigger then the maximum allowed values. Here's how to change them. Go to `Interface/AddOns/Grid2Options/modules/statuses/`  and open `StatusHealAbsorbs.lua` with your favorite text editor, and replace the values you see with
+
+```
+		softMax = 3000000,
+		bigStep = 25000,
+```
+
+You need to do this three times. Then you can go in-game and change the thresholds at heal-absorbs, and assign them to both a text and color indicator. The result looks like this:
+
+[img width=860 [https://raw.githubusercontent.com/Smolderbrand/antorus/master/images/healabsorbs.png]]
+</pre>
+</div>
+<div created="20200106151050374" modified="20200107135035333" tags="" title="Gear guide">
 <pre>Your stat priority is the following:
 
 * ''Intellect'' on plate/cape is your main stat
@@ -10007,7 +10323,7 @@ The following are a way to boost your stats a bit, they are not really expensive
 * [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_enchantedscroll.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=128543&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#0070dc&gt;Enchant Ring - Binding of Mastery
 &lt;/font&gt;&lt;/a&gt; - +200 Mastery
 
-* [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_70_cutgem03_orangee.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=130219&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#0070dc&gt;Deadly Eye of Prophecy&lt;/font&gt;&lt;/a&gt; - +150 Critical Strike
+* [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_70_cutgem03_orange.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=130219&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#0070dc&gt;Deadly Eye of Prophecy&lt;/font&gt;&lt;/a&gt; - +150 Critical Strike
 
 * [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_70_cutgem03_purple.jpg]]&lt;a href=&quot;https://www.wow-freakz.com/item_finder.php?item=130222&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;font color=#0070dc&gt;Masterful Shadowruby&lt;/font&gt;&lt;/a&gt; - +150 Mastery
 
@@ -10059,7 +10375,7 @@ To determine the actual value of an individual relic, add this to weapon upgrade
 
 [img [https://raw.githubusercontent.com/Smolderbrand/antorus/master/images/netherlight.png]]</pre>
 </div>
-<div created="20200106121928684" modified="20200107104422379" tags="" title="Introduction to raid healing">
+<div created="20200106121928684" modified="20200107133858517" tags="" title="Introduction to raid healing">
 <pre>Before explaining the principles of efficient raid healing, I will assume that you have skimmed (at least) your spell list and the gearing guide. In progress raiding, as a rule, it is best to use the following:
 
 ''Talents''
@@ -10168,7 +10484,7 @@ If you have the correct stats and legendaries, your healing should consist of th
 
 Watching videos for legion encounters, either guides or healers' ~PoV, is a way to find out when to use CDs; analyzing fights is another way, go to [[Warcraft Logs|https://www.warcraftlogs.com/zone/rankings/13#partition=1&amp;region=-1&amp;boss=2032]] and select an example of an encounter. If you look at the healers by selecting that option, this is a great way to spy upon them and see what trinkets, legendaries, ~BiS gear or stats they use, and what talents they choose for a certain fight, you can even replay those encounters or see what their individual spells did and compare to how you are doing at a certain item level. Keep in mind that some of these people are looking for &quot;parses&quot; and may ask their leaders to take the risk of using fewer healers or their guild mates to do less, and that may not be representative at all to the normal healing someone should be doing on a certain boss. Besides looking at how much damage things hit for, if you want to know how frequently something is cast or some aura is applied, you can filter events following the rules [[here|https://www.warcraftlogs.com/help/pins]]; you will find out that the expression filter uses a language similar to SQL, and from there you can play with it to discover what happens at certain moments during that encounter.</pre>
 </div>
-<div created="20200106205526659" modified="20200107073409108" tags="" title="Practical matters">
+<div created="20200106205526659" modified="20200107123018562" tags="" title="Practical matters">
 <pre>* Most of the posts use links from the freakz databse, and the Antorus spell/item links ''will'' work only after Felsong is updated to 7.3.5.
 
 * I don't have time to write much about refined cooldown usage, which many times will depend on factors such as raid composition/dps strength. However I recommend familiarizing yourself thoroughly with the encounters themselves before anything else, since not doing the script won't help anyone. Not really.
@@ -10187,7 +10503,7 @@ Watching videos for legion encounters, either guides or healers' ~PoV, is a way 
 
 * [[OiLvL|https://www.curseforge.com/wow/addons/o-item-level]] - shows your raid roster with average ilvl of all roles at a glance, and also allows you to inspect other people's raid progress either in-world or in-raid in case you are a raid leader
 
-* [[Method Dungeon Tools|https://www.curseforge.com/wow/addons/method-dungeon-tools]] - this is a very nice thing introduced in 7.3.5, you can use it to view every trash pack and even the patrol paths in all Legion dungeons, how much it counts for in mythic+, as well as how fat the mobs/bosses are beforehand; useful for planning high key runs (also because of this thing it will be very easy to spot anything wrong in freakz mythic+ dungeons, giving rise to endless bickering between some people....)
+* [[Method Dungeon Tools|https://www.curseforge.com/wow/addons/method-dungeon-tools]] - this is a very nice thing introduced in 7.3.5, you can use it to view every trash pack and even the patrol paths in all Legion dungeons, how much it counts for in mythic+, changes for teeming affix, as well as how fat the mobs/bosses are beforehand; useful for planning high key runs (also because of this thing it will be very easy to spot exactly what is wrong in freakz mythic+ dungeons, giving rise to endless bickering between some people....)
 
 * [[Details|https://www.curseforge.com/wow/addons/details]] - this shows a lot of information about boss encounters, buffs and deaths feature make it very useful
 
@@ -10202,188 +10518,6 @@ Watching videos for legion encounters, either guides or healers' ~PoV, is a way 
 * [[idTip|https://www.curseforge.com/wow/addons/idtip]] - shows all IDs on tooltips, very useful if you see something freaky and you want to figure out what's going on
 
 * [[HandyNotes: Dungeon Locations|https://www.curseforge.com/wow/addons/handynotes_dungeonlocations]] - just useful.</pre>
-</div>
-<div created="20200106144709282" modified="20200107111136281" tags="" title="Tips specific to raid encounters">
-<pre>Here is a list of the things I found useful during the raids that are released, keep in mind while consulting the logs that certain things are different between freakz encounters and blizzard encounters:
-
-!! ''The Nighthold''
-
-''Skorpyron''
-
-* use your bursts during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_datacrystal05.jpg]][[Crystalline Fragments|https://www.wow-freakz.com/spells.php?spell=204292&amp;name=crystalline-fragments]] as this is when most ~AoE damage occurs;
-
-* this means that on normal/heroic you want to use a CD after each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_shield_24.jpg]][[Vulnerability|https://www.wow-freakz.com/spells.php?spell=204448&amp;name=chitinous-exoskeleton]], while also topping the tanks which will take heavy damage
-
-* on mythic this happens when the boss is blue, while the other shards are not especially dangerous
-
-* pop [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] during your bursts or to deal some damage to the adds.
-
-''Krosus''
-
-* use a strong cooldown on [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_fistofjustice.jpg]][[Slam|https://www.wow-freakz.com/spells.php?spell=205875]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felflamestrike.jpg]][[Orb of Destruction|https://www.wow-freakz.com/spells.php?spell=205348]] consecutive casts
-
-* [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] can be used before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_fistofjustice.jpg]][[Slam|https://www.wow-freakz.com/spells.php?spell=205875]] casts in melee range
-
-* since this boss is a bit underwhelming, I personally prefer to keep AM for the case when too many adds spawn (until they fix add scaling this is more dangerous on normal mode than heroic/mythic)
-
-''Tichondrius''
-
-* you should use a large cooldown if two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fel_elementaldevastation.jpg]][[Brand of Argus|https://www.wow-freakz.com/spells.php?spell=212795]] detonations occur at the same time or during the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidentropy.jpg]][[Echoes of the Void|https://www.wow-freakz.com/spells.php?spell=213531]] when many people already have the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_necroticplague.jpg]][[Carrion Plague|https://www.wow-freakz.com/spells.php?spell=206480]] debuff
-
-* since on Mythic the CP debuffs work differently, you should care more about the brand detonations which deal massive damage
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] macro before the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_voidentropy.jpg]][[Echoes of the Void|https://www.wow-freakz.com/spells.php?spell=213531]]
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_howlofterror.jpg]][[Illusionary Night|https://www.wow-freakz.com/spells.php?spell=206365]]
-
-''Elisande''
-
-* during phase one the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_starfire.jpg]][[Cascadent star|https://www.wow-freakz.com/spells.php?spell=229738]] hits the hardest, I prefer to use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] at the beginning
-
-* during phase two and three use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] if the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_invocation.jpg]][[Epocheric Orb Falloff|https://www.wow-freakz.com/spells.php?spell=210546]] ramps up
-
-* be sure everyone is topped up during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_arcane_arcane03.jpg]][[Delphuric Beam|https://www.wow-freakz.com/spells.php?spell=214278]] casts
-
-''Gul'dan''
-
-This boss is bugged like hell at the moment so not much to care for.
-
-* use a strong cooldown on [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_trinket6oih_orb4.jpg]][[Empowered Eye of Gul'dan|https://www.wow-freakz.com/spells.php?spell=209489]] casts
-
-* (mythic only) make sure everyone is topped up before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_infernalstrike1.jpg]][[Flame Crash|https://www.wow-freakz.com/spells.php?spell=227096]]
-
-* (mythic only) use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_layonhands.jpg]][[Lay on hands|https://www.wow-freakz.com/spells.php?spell=633&amp;name=lay-on-hands]] to deplete the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_elemental_primal_shadow.jpg]][[Severed Soul|https://www.wow-freakz.com/spells.php?spell=206506]] shield
-
-!! ''Tomb of Sargeras''
-
-''Goroth''
-
-* use your burst macros after every [img width=16 [https://wow.zamimg.com/images/wow/icons/large/creatureportrait_infernal_ball_02.jpg]][[Shattering Nova|https://www.wow-freakz.com/spells.php?spell=233283&amp;name=shattering-nova]] and (mythic only) [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felimmolation.jpg]][[Infernal Burning|https://www.wow-freakz.com/spells.php?spell=233062&amp;name=infernal-burning]]
-
-* on mythic, people need to be topped up after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/creatureportrait_infernal_ball_02.jpg]][[Rain of Brimstone|https://www.wow-freakz.com/spells.php?spell=238588&amp;name=rain-of-brimstone]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_burningembersgreen.jpg]][[Crashing Comet|https://www.wow-freakz.com/spells.php?spell=230345]]; getting hit by two spells will likely result in a death if all healers fail to bring everyone again to full HP because of the two mechanics above.
-
-''Demonic Inquisition''
-
-* this boss is not very spectacular, just use your bursts when other healers go to the cage to heal the aoe damage.
-
-''Harjatan''
-
-* the interval between two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phases is a bit longer than one minute, how long depends on the number of pools of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_elemental_mote_water01.jpg]][[Drenching waters|https://www.wow-freakz.com/spells.php?spell=231768]] on the ground
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] when a tank has too many stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_ghoulfrenzy.jpg]][[Jagged Abrasion|https://www.wow-freakz.com/spells.php?spell=231998]]
-
-* stack with other people and keep everyone topped up after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warrior_endlessrage.jpg]][[Unchecked Rage|https://www.wow-freakz.com/spells.php?spell=231854]]
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] on each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phase
-
-* on mythic, use your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] during the second [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_shawaterelemental_reform.jpg]][[Draw In|https://www.wow-freakz.com/spells.php?spell=232061]] phase and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] macros on third [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_icetouch.jpg]][[Frigid Blows|https://www.wow-freakz.com/spells.php?spell=233429]], when damage will ramp up since the boss has many stacks from the pools that have formed until now.
-
-''The Desolate Host''
-
-* at the beginning, use your beacons on tanks on both realms, or if using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_clarityofpurpose.jpg]][[Beacon of the lightbringer|https://www.wow-freakz.com/spells.php?spell=197446&amp;name=beacon-of-the-lightbringer]], place it in the opposite realm
-
-* spot-heal dps/tanks hit by the adds' abilities
-
-* if you are in Spirit Realm, you can pop all your CDs except [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] on each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg]][[Wailing Souls|https://www.wow-freakz.com/spells.php?spell=236075]] cast; since this takes 1 minute, it may be better not to use them all at once
-
-* if you are in Spirit Realm save [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] for an overlap between [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadesofdarkness.jpg]][[Wailing Souls|https://www.wow-freakz.com/spells.php?spell=236075]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_bossgorefiend_touchofdoom.jpg]][[Sundering Doom|https://www.wow-freakz.com/spells.php?spell=236542]]
-
-* if you are in Corporal Realm, solo-soak [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_spear_08.jpg]][[Spear of Anguish|https://www.wow-freakz.com/spells.php?spell=235933]] with [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]] so that you can immune the absorption shield and return to your place
-
-* keep everyone topped up before each of the Desolate Host's casts, especially if the boss has high stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_darkness.jpg]][[Torment|https://www.wow-freakz.com/spells.php?spell=236548]]
-
-''Mistress Sassz'ine''
-
-* ideally, you should rotate your small cooldowns for each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_ammo_arrow_03.jpg]][[Hydra Shot|https://www.wow-freakz.com/spells.php?spell=230139]]
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] on the burden-debuffed tank if they accidentally pick up adds
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofvalor.jpg]][[Blessing of freedom|https://www.wow-freakz.com/spells.php?spell=1044&amp;name=blessing-of-freedom]] to pick up the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_misc_food_legion_goooil_pool.jpg]][[Befouling Ink|https://www.wow-freakz.com/spells.php?spell=232913]] patches on the ground and bring them to Sarukel
-
-* use larger cooldowns during phase 3 when damage ramps up
-
-* switch to [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_blessedlife.jpg]][[Aura of Mercy|https://www.wow-freakz.com/spells.php?spell=183415&amp;name=aura-of-mercy]] in pugs if people are likely to one-shot you during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/trade_archaeology_shark-jaws.jpg]][[Devouring Maw|https://www.wow-freakz.com/spells.php?spell=232746]]
-
-''Sisters of the Moon''
-
-* most of the damage during this fight is unavoidable, due to abilities like [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_upgrademoonglaive.jpg]][[Twilight Glaive|https://www.wow-freakz.com/spells.php?spell=236541]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/
-ability_socererking_arcanewrath.jpg]][[Lunar Strike|https://www.wow-freakz.com/spells.php?spell=237632]]
-
-* unfortunately [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] doesn't count absorbed healing during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], so you may want to pop this at half-moon, when either [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_mage_supernova_nightborne.jpg]][[Astral Purge|https://www.wow-freakz.com/spells.php?spell=234998]] (mythic only) or other unavoidable damage ramps up
-
-* make sure you can see the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_ironmaidens_convulsiveshadows.jpg]][[Rapid Shot|https://www.wow-freakz.com/spells.php?spell=236603]] on your raid frames, and spot-heal them quickly
-
-* especially on mythic, it's important to keep available [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] for use right before [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], and then pop your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] macro with any other trinkets/spells you have on CD to deplete the shield.
-
-Dirty stuff - don't read if you don't want to be spoiled :)
-
-* here's how to dodge [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_upgrademoonglaive.jpg]][[Glaive Storm|https://www.wow-freakz.com/spells.php?spell=236480]] reliably. You should look at the Huntress' incorporeal form and be at her side when she throws the big glaive. The way this works, it will shatter into three smaller glaives you can easily dodge, however when these shatter again into nine glaives and you have high stacks of [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_socererking_arcanefortification.jpg]][[Lunar Suffusion|https://www.wow-freakz.com/spells.php?spell=234995]] it's easy to get one-shot.
-
-What happens though, if you look at the boss room, it's not exactly circular, but more like a polygon with 24 sides. The small glaives will always fixate on one of the [[glaive targets|https://www.wow-freakz.com/npc_finder.php?npc=119054&amp;name=glaive-target]] which, as it happens, (almost) coincide with the corners of the room. Thus a typical cast will look like this (I took this screenshot from a sandbox since I couldn't find one; during the fight it's almost impossible to view all the room without a first-person view which is really annoying, but get familiar with it):
-
-[img width=860 [https://raw.githubusercontent.com/Smolderbrand/antorus/master/images/glaivestorm.png]]
-
-From here it's easy to deduce what to do: dodge the big glaive and move to the middle of one of those 24 walls, while healing/dpsing normally. On mythic you don't want to trigger a detonation, so keep yourself to the left half of the room. If you are not a tauren, your hit box is much smaller than you think, and even if two glaives come at your sides, nothing will happen. (It requires faith, I know.)
-
-* you //can// use sacrifice [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] once to deplete a large part of the shield during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_druid_eclipse.jpg]][[Embrace of the Eclipse|https://www.wow-freakz.com/spells.php?spell=233263]], but you should be a bit crazy to try this on mythic, better warn your raid leader about it before trying. Here's how: keep yourself at relatively low health before the cast (maybe using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_lightofthemartyr.jpg]][[Light of the martyr|https://www.wow-freakz.com/spells.php?spell=183998&amp;name=light-of-the-martyr]] if other healers are overzealous), prepare yourself as you would usually do and when all shields are up use the following macro:
-
-```
-/use Rule of Law
-/use Holy Avenger
-/use Avenging Wrath
-/use Aura Mastery
-/use Divine Shield - this will immune your absorb shield
-/use [target=self] Holy Shock
-```
-
-and then heal normally.
-
-* if you want to use Grid2 to be warned about the relative size of healing absorbs, you probably noticed that the shields are bigger then the maximum allowed values. Here's how to change them. Go to `Interface/AddOns/Grid2Options/modules/statuses/`  and open `StatusHealAbsorbs.lua` with your favorite text editor, and replace the values you see with
-
-```
-		softMax = 3000000,
-		bigStep = 25000,
-```
-
-You need to do this three times. Then you can go in-game and change the thresholds at heal-absorbs, and assign them to both a text and color indicator. The result looks like this:
-
-[img width=860 [https://raw.githubusercontent.com/Smolderbrand/antorus/master/images/healabsorbs.png]]
-
-''Maiden of Vigilance''
-
-* since the interval between two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthepure.jpg]][[Blowback|https://www.wow-freakz.com/spells.php?spell=248812]] is roughly 90 seconds, this boss is very paladin-friendly
-
-* after [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_judgementofthepure.jpg]][[Blowback|https://www.wow-freakz.com/spells.php?spell=248812]], soak a few orbs and move towards the Maiden, and pop one of your [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] or [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_avenginewrath.jpg]][[Avenging wrath|https://www.wow-freakz.com/spells.php?spell=31842&amp;name=avenging-wrath]] macros after using [img width=16 [https://wow.zamimg.com/images/wow/icons/large/inv_mace_2h_artifactsilverhand_d_01.jpg]][[Tyr's deliverance|https://www.wow-freakz.com/spells.php?spell=200652&amp;name=tyr-s-deliverance]] + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_paladin_holyavenger.jpg]][[Holy avenger|https://www.wow-freakz.com/spells.php?spell=105809&amp;name=holy-avenger]]
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] on cooldown in melee range
-
-''Fallen Avatar''
-
-* in phase one, use a big cooldown during each [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felhellfire.jpg]][[Rupture Realities|https://www.wow-freakz.com/spells.php?spell=235572]] cast
-
-* (heroic/mythic) you can use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] either in melee range or on one of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_nature_removecurse.jpg]][[Touch of Sargeras|https://www.wow-freakz.com/spells.php?spell=239058]] zones
-
-* as I said elsewhere, it's not your job to spam [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_flashheal.jpg]][[Flash of Light|https://www.wow-freakz.com/spells.php?spell=19750&amp;name=flash-of-light]] on tanks, but rather to stay in range and heal everyone
-
-* you can use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] to remove [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldbreak.jpg]][[Desolate|https://www.wow-freakz.com/spells.php?spell=236494]] stacks, keep in mind that this might make the tank lose aggro so be prepared to spot-heal rogues/dh
-
-* in phase two, use larger cooldowns during [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felhellfire.jpg]][[Rupture Realities|https://www.wow-freakz.com/spells.php?spell=235572]] especially if the boss has high [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felcano.jpg]][[Fel Infusion|https://www.wow-freakz.com/spells.php?spell=236684]] stacks
-
-* you can solo soak [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_priest_surgeofdarkness.jpg]][[Dark Mark|https://www.wow-freakz.com/spells.php?spell=239739]], keep in mind that this does not immune the vertical knockback, at least until they fix it (there is a hotfix which says it shouldn't target healers)
-
-''Kil'jaeden''
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_sealofprotection.jpg]][[Blessing of protection|https://www.wow-freakz.com/spells.php?spell=1022&amp;name=blessing-of-protection]] and [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_divineshield.jpg]][[Divine shield|https://www.wow-freakz.com/spells.php?spell=642&amp;name=divine-shield]] to soak two [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_mage_meteor.jpg]][[Armaggedon Hail|https://www.wow-freakz.com/spells.php?spell=240911]] meteors
-
-* use [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_paladin_lightshammer.jpg]][[Light's hammer|https://www.wow-freakz.com/spells.php?spell=114158&amp;name=light-s-hammer]] if available on each of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/sha_spell_warlock_demonsoul_nightmare.jpg]][[Shadow Reflection: Erupting|https://www.wow-freakz.com/spells.php?spell=236710]] or at the beginning of phase two
-
-* use your large cooldowns towards the end of the first intermission, when the raid is coated in [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_fire_felpyroblast.jpg]][[Armageddon Rain|https://www.wow-freakz.com/spells.php?spell=234310]] debuffs and if it's likely that [img width=16 [https://wow.zamimg.com/images/wow/icons/large/ability_warlock_inferno.jpg]][[Bursting Dreadflame|https://www.wow-freakz.com/spells.php?spell=238429]] will one-shot someone
-
-* use artifact ability + [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] right after you reach Illidan in the second intermission to counter the ~DoT, or if it's not necessary after the first [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_blackplague.jpg]][[Darkness of a Thousand Souls|https://www.wow-freakz.com/spells.php?spell=239216]] cast
-
-* (heroic/mythic) make sure that everyone is topped right before the first [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_shadow_blackplague.jpg]][[Darkness of a Thousand Souls|https://www.wow-freakz.com/spells.php?spell=239216]], as otherwise this might one-shot on these modes
-
-* (mythic only) you want to keep [img width=16 [https://wow.zamimg.com/images/wow/icons/large/spell_holy_auramastery.jpg]][[Aura mastery|https://www.wow-freakz.com/spells.php?spell=31821&amp;name=aura-mastery]] for each of the [img width=16 [https://wow.zamimg.com/images/wow/icons/large/sha_spell_warlock_demonsoul_nightborne.jpg]][[Shadow Reflection: Hopeless|https://www.wow-freakz.com/spells.php?spell=237590]], and since paladin is so good at healing these clones, you may want to write a burst macro with all your cooldowns to pop on each of these; keep in mind that these don't have any associated frames (similarly to mage tower ghosts), so you want to have your mouseover macros on your keybinds if you don't want to target them individually</pre>
 </div>
 
 </div>
